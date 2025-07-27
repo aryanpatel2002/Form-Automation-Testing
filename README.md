@@ -86,17 +86,17 @@ Each record submission consists of:
 ## 🔄 Application Flow
 
 > The automation process is illustrated below:
-> 
+ 
 flowchart TD
-    A[Start] --> B[Launch Android App]
-    B --> C[Locate Form Fields]
-    C --> D[Enter Values (Loop x50)]
-    D --> E[Click Submit]
-    E --> F[Wait for Success]
-    F --> G{More Entries?}
-    G -- Yes --> C
-    G -- No --> H[Generate HTML Report]
-    H --> I[End]
+    *A[Start] --> B[Launch Android App]
+    *B --> C[Locate Form Fields]
+    *C --> D[Enter Values (Loop x50)]
+    *D --> E[Click Submit]
+    *E --> F[Wait for Success]
+    *F --> G{More Entries?}
+    *G -- Yes --> C
+    *G -- No --> H[Generate HTML Report]
+    *H --> I[End]
 ```
 
 ---
