@@ -38,7 +38,7 @@ android-form-automation/
 
 ---
 
-## ⚙Setup Instructions
+## Setup Instructions
 
 1. **Start Appium Server**
    ```bash
@@ -108,22 +108,4 @@ After successful execution, a detailed report is generated at:
 ./reports/TestResults.html
 ```
 
-# Sample Report Screenshot
 
-![Sample Report](assets/report-screenshot.png) <!-- optional, if you want -->
-
----
-
-# Author
-
-* **Aryan Patel**
-* Internship @ Kanini Software Solutions
-* Applying for **QA/Automation roles**
-
----
-
-# Final Notes
-
-* Make sure the resource-IDs used match your Android app's actual layout.
-* You can modify the `range(1, 51)` if you want to submit fewer or more records.
-* For real-time logs, check your terminal output.
