@@ -68,7 +68,7 @@ android-form-automation/
 
 ---
 
-## Sample Values Submitted
+# Sample Values Submitted
 
 Each submission includes:
 
@@ -82,7 +82,7 @@ Each submission includes:
 
 ---
 
-## Application Flow
+# Application Flow
 
 > Below is a high-level flowchart of the automation logic:
 
@@ -100,7 +100,7 @@ flowchart TD
 
 ---
 
-## Report
+# Report
 
 After successful execution, a detailed report is generated at:
 
@@ -108,13 +108,13 @@ After successful execution, a detailed report is generated at:
 ./reports/TestResults.html
 ```
 
-### Sample Report Screenshot
+# Sample Report Screenshot
 
 ![Sample Report](assets/report-screenshot.png) <!-- optional, if you want -->
 
 ---
 
-## Author
+# Author
 
 * **Aryan Patel**
 * Internship @ Kanini Software Solutions
@@ -122,7 +122,7 @@ After successful execution, a detailed report is generated at:
 
 ---
 
-## Final Notes
+# Final Notes
 
 * Make sure the resource-IDs used match your Android app's actual layout.
 * You can modify the `range(1, 51)` if you want to submit fewer or more records.
