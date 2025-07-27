@@ -86,8 +86,7 @@ Each record submission consists of:
 ## 🔄 Application Flow
 
 > The automation process is illustrated below:
-
-```mermaid
+> 
 flowchart TD
     A[Start] --> B[Launch Android App]
     B --> C[Locate Form Fields]
