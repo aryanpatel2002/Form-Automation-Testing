@@ -30,10 +30,10 @@ This project automates the submission of a form in an Android application using 
 ```
 android-form-automation/
 │
-├── test_form_automation.py       # Main automation script
-├── TestResults.html              # Generated HTML test report
-├── DemoVideo.mp4                 # Walkthrough video (under 3 mins)
-├── README.md                     # Project documentation
+├── test_form_automation.py                # Main automation script
+├── test_form_automation_report.html       # Generated HTML test report
+├── DemoVideo.mp4                          # Walkthrough video (under 3 mins)
+├── README.md                              # Project documentation
 ```
 
 ---
@@ -107,7 +107,7 @@ flowchart TD
 After successful execution, an HTML report is generated at:
 
 ```
-./TestResults.html
+./test_form_automation_report..html
 ```
 
 It includes:
