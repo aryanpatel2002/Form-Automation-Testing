@@ -25,16 +25,13 @@ This project automates the submission of a form inside an Android app using **Ap
 
 ## Folder Structure
 
-```
-
 android-form-automation/
 │
 ├── test\_form\_automation.py     # Main automation script
-├── reports/
-│   └── TestResults.html        # HTML report generated after run               
-├── README.md                   # This file
+├── TestResults.html              # HTML report generated after run     
+├── DemoVideo.mp4                           
+├── README.md                   
 
-````
 
 ---
 
@@ -43,13 +40,13 @@ android-form-automation/
 1. **Start Appium Server**
    ```bash
    appium
-````
+```
 
 2. **Install required packages**
 
    ```bash
    pip install Appium-Python-Client selenium html-testRunner
-   ```
+````
 
 3. **Connect your Android device**
 
@@ -58,13 +55,13 @@ android-form-automation/
 
      ```bash
      adb devices
-     ```
+````
 
 4. **Run the automation**
 
    ```bash
    python3 test_form_automation.py
-   ```
+````
 
 ---
 
