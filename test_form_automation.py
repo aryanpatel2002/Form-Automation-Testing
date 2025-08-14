@@ -31,7 +31,7 @@ class TestEekiFormSubmission(unittest.TestCase):
     def test_submit_50_records(self):
         for i in range(1, 51):
             try:
-                print(f"[+] Submitting entry #{i}")
+                print(f"Submitting entry #{i}")
 
                 dome = f"Dome {i}"
                 line_letter = str(i)
@@ -39,7 +39,6 @@ class TestEekiFormSubmission(unittest.TestCase):
                 chamber_value = str(i)
                 position_value = str(i)
 
-                # Fill form
                 self.driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@resource-id="dome-0-0"]').clear()
                 self.driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@resource-id="dome-0-0"]').send_keys(dome)
 
@@ -55,26 +54,24 @@ class TestEekiFormSubmission(unittest.TestCase):
                 self.driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@resource-id="position-0-4"]').clear()
                 self.driver.find_element(AppiumBy.XPATH, '//android.widget.EditText[@resource-id="position-0-4" ]').send_keys(position_value)
 
-                # Submit
                 self.driver.find_element(
                     AppiumBy.XPATH, 
                     '//android.widget.TextView[@resource-id="button-text" and @text="Submit"]'
                 ).click()
 
-                time.sleep(2)  # Wait for navigation
+                time.sleep(2)
 
-                # Click Add button for next record
                 self.driver.find_element(
                     AppiumBy.XPATH, 
                     '//android.widget.TextView[@text="󰐕"] '
                 ).click()
 
-                time.sleep(1.5)  # Wait for form to load
+                time.sleep(1.5)
 
             except Exception as e:
-                self.fail(f"[!] Error at entry #{i}: {str(e)}")
+                self.fail(f"Error at entry #{i}: {str(e)}")
 
-        print("[✓] All 50 submissions done.")
+        print("All 50 submissions done.")
 
     def tearDown(self):
         self.driver.quit()
